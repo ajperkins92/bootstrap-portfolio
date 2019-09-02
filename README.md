@@ -1,2 +1,2 @@
-# bootstrap-portfolio
-Basic Portfolio project but using Bootstrap for site layout
+# Basic-Portfolio
+This is the harder of the two assignment portfolios

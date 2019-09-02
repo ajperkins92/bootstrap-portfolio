@@ -1,58 +1,118 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en-us">
 
 <head>
-    <meta charset="UTF-8">
-    <title>About Me</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
+  <meta charset="UTF-8">
+  <title>About | Alex Perkins</title>
+
+  <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
 </head>
 
 <body>
-    <!-- Fixed Header -->
-    <header id="masthead">
-        <div class="container">
-            <!-- Name in the upper left / re-routes to index.html -->
-            <a id="logo" href="index.html">Alex Perkins</a>
-            <!-- Website menu -->
-            <nav>
-                <a href="index.html">About</a>
-                <a href="portfolio.html">Portfolio</a>
-                <a href="contact.html">Contact</a>
-            </nav>
-        </div>
-    </header>
 
+  <!-- Former Header -->
 
-    <div id="about-me-area">
-        <section>
-            <h1>About Me</h1>
-
-            <img id="portrait" src="./assets/images/Bizible Portrait.jpg" alt="Alex Perkins" height="250px"
-                width="200px">
-
-            <p>Hi, my name is Alex Perkins and I'm so glad you're dropping by my portfolio!</p>
-
-            <p>A little about me; I grew up in a small college town in Minnesota called Northfield. If you've ever heard
-                of Saint Olaf or Carleton colleges, or Malt-o-Meal cereal, then you know something about Northfield!</p>
-
-            <p>I began dabbling in software development/coding about a year ago after trying to create a website to
-                write about my various endeavors. That's when I realized I enjoy writing code, particularly the
-                combination of the scientific and artistic!</p>
-
-            <p>When I'm not at work as a Technical Account Manager at SkyKick, I can be found hanging out with my wife,
-                Waverly, playing with our two bunnies Sage and Juniper, playing a board game (Scythe is a current
-                favorite), going on a hike, playing guitar, or drinking a beer in one of Seattle's many excellent
-                drinking establishments!</p>
-        </section>
+  <!-- <header id="masthead">
+    <div class="container">
+      <a href="index.html" id="logo">Alex Perkins</a>
+      <nav>
+        <a href="index.html">About</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+      </nav>
     </div>
-    <!-- Footer should always stick to the bottom of the page -->
+  </header> -->
 
-    <footer>
-        <div class="container">
-            Copyright &copy;
+  <!-- Bootstrap Header -->
+
+  <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light">
+    <a id="navbar-logo-button" class="navbar-brand p-3 mb-2 bg-info text-white" href="./index.html">Alex Perkins</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="./index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./portfolio.html">Portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./contact.html">Contact</a>
+        </li>
+      </ul>
+
+    </div>
+  </nav>
+
+
+
+  <!--Main About Me Content -->
+
+
+
+  <!-- <div id="main-container" class="container">
+    <section class="main-section"> -->
+
+  <div class="container">
+    <div class="row">
+      <h1>About Me</h1>
+    </div>
+
+    <div class="row">
+      <div class="col-4">
+        <img src="./assets/images/Bizible Portrait.jpg" alt="Alex Perkins" width="100%">
+      </div>
+
+      <div class="col-8">
+        <p>Hi! My name is Alex Perkins and I'm so glad to have you visiting my portfolio!</p>
+
+        <p>I'm from a small town in southern Minnesota called Northfield, studied Biology at Iowa State, and moved out
+          to
+          Seattle 4 years ago with my beautiful wife, Waverly, and our two pet bunnies.</p>
+
+        <p>I'm currently working at a startup, SkyKick, as a Technical Account Manager, helping Microsoft-partnering
+          Managed Service Providers with their Office 365 Cloud migrations and Backup Services.</p>
+
+        <p>My professional interests include full-stack development, IT, entrepreneurship, startups, account
+          management,
+          and custom API integration.</p>
+      </div>
+    </div>
+
+  </div>
+    <!-- </section>
+  </div> -->
+
+
+    <div class="row">
+      <footer>
+        <div>
+          Copyright &copy;
         </div>
-    </footer>
+      </footer>
+    </div>
 
+
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
